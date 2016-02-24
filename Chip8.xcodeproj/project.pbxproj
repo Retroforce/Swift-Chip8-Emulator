@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D88E524E1C7B9B510008C5F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88E524D1C7B9B510008C5F3 /* AppDelegate.swift */; };
+		D88E52501C7B9B510008C5F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88E524F1C7B9B510008C5F3 /* ViewController.swift */; };
+		D88E52531C7B9B510008C5F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88E52511C7B9B510008C5F3 /* Main.storyboard */; };
+		D88E52551C7B9B510008C5F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88E52541C7B9B510008C5F3 /* Assets.xcassets */; };
+		D88E52581C7B9B510008C5F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88E52561C7B9B510008C5F3 /* LaunchScreen.storyboard */; };
+		D88E52601C7B9B6C0008C5F3 /* Chip8Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88E525F1C7B9B6C0008C5F3 /* Chip8Core.swift */; };
+		D89A07211C7D153100D4E427 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A07201C7D153100D4E427 /* AVFoundation.framework */; };
+		D89A07231C7D18E500D4E427 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = D89A07221C7D18E500D4E427 /* beep.wav */; };
+		D89A073C1C7DA17E00D4E427 /* BitBlitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A073B1C7DA17E00D4E427 /* BitBlitter.swift */; };
+		D89A073F1C7DA31C00D4E427 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A073E1C7DA31C00D4E427 /* AudioPlayer.swift */; };
+		D89A07411C7DCC0500D4E427 /* chip8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D89A07401C7DCC0500D4E427 /* chip8.jpeg */; };
+		D89A07431C7DD70400D4E427 /* RomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A07421C7DD70400D4E427 /* RomListViewController.swift */; };
+		D89A07911C7DE1C900D4E427 /* 15 Puzzle [Roger Ivie] (alt).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07461C7DE06800D4E427 /* 15 Puzzle [Roger Ivie] (alt).ch8 */; };
+		D89A07921C7DE1C900D4E427 /* 15 Puzzle [Roger Ivie].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07471C7DE06800D4E427 /* 15 Puzzle [Roger Ivie].ch8 */; };
+		D89A07931C7DE1C900D4E427 /* Addition Problems [Paul C. Moews].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07481C7DE06800D4E427 /* Addition Problems [Paul C. Moews].ch8 */; };
+		D89A07941C7DE1C900D4E427 /* Airplane.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07491C7DE06800D4E427 /* Airplane.ch8 */; };
+		D89A07951C7DE1C900D4E427 /* Animal Race [Brian Astle].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A074A1C7DE06800D4E427 /* Animal Race [Brian Astle].ch8 */; };
+		D89A07961C7DE1C900D4E427 /* Astro Dodge [Revival Studios, 2008].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A074B1C7DE06800D4E427 /* Astro Dodge [Revival Studios, 2008].ch8 */; };
+		D89A07971C7DE1C900D4E427 /* Biorhythm [Jef Winsor].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A074C1C7DE06800D4E427 /* Biorhythm [Jef Winsor].ch8 */; };
+		D89A07981C7DE1C900D4E427 /* Blinky [Hans Christian Egeberg, 1991].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A074D1C7DE06800D4E427 /* Blinky [Hans Christian Egeberg, 1991].ch8 */; };
+		D89A07991C7DE1C900D4E427 /* Blinky [Hans Christian Egeberg] (alt).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A074E1C7DE06800D4E427 /* Blinky [Hans Christian Egeberg] (alt).ch8 */; };
+		D89A079A1C7DE1C900D4E427 /* Blitz [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A074F1C7DE06800D4E427 /* Blitz [David Winter].ch8 */; };
+		D89A079B1C7DE1C900D4E427 /* Bowling [Gooitzen van der Wal].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07501C7DE06800D4E427 /* Bowling [Gooitzen van der Wal].ch8 */; };
+		D89A079C1C7DE1C900D4E427 /* Breakout (Brix hack) [David Winter, 1997].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07511C7DE06800D4E427 /* Breakout (Brix hack) [David Winter, 1997].ch8 */; };
+		D89A079D1C7DE1C900D4E427 /* Breakout [Carmelo Cortez, 1979].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07521C7DE06800D4E427 /* Breakout [Carmelo Cortez, 1979].ch8 */; };
+		D89A079E1C7DE1C900D4E427 /* Brick (Brix hack, 1990).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07531C7DE06800D4E427 /* Brick (Brix hack, 1990).ch8 */; };
+		D89A079F1C7DE1C900D4E427 /* Brix [Andreas Gustafsson, 1990].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07541C7DE06800D4E427 /* Brix [Andreas Gustafsson, 1990].ch8 */; };
+		D89A07A01C7DE1C900D4E427 /* Cave.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07551C7DE06800D4E427 /* Cave.ch8 */; };
+		D89A07A11C7DE1C900D4E427 /* Coin Flipping [Carmelo Cortez, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07561C7DE06800D4E427 /* Coin Flipping [Carmelo Cortez, 1978].ch8 */; };
+		D89A07A21C7DE1C900D4E427 /* Connect 4 [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07571C7DE06800D4E427 /* Connect 4 [David Winter].ch8 */; };
+		D89A07A31C7DE1C900D4E427 /* Craps [Camerlo Cortez, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07581C7DE06800D4E427 /* Craps [Camerlo Cortez, 1978].ch8 */; };
+		D89A07A41C7DE1C900D4E427 /* Deflection [John Fort].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07591C7DE06800D4E427 /* Deflection [John Fort].ch8 */; };
+		D89A07A51C7DE1C900D4E427 /* Figures.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A075A1C7DE06800D4E427 /* Figures.ch8 */; };
+		D89A07A61C7DE1C900D4E427 /* Filter.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A075B1C7DE06800D4E427 /* Filter.ch8 */; };
+		D89A07A71C7DE1C900D4E427 /* Guess [David Winter] (alt).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A075C1C7DE06800D4E427 /* Guess [David Winter] (alt).ch8 */; };
+		D89A07A81C7DE1C900D4E427 /* Guess [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A075D1C7DE06800D4E427 /* Guess [David Winter].ch8 */; };
+		D89A07A91C7DE1C900D4E427 /* Hi-Lo [Jef Winsor, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A075E1C7DE06800D4E427 /* Hi-Lo [Jef Winsor, 1978].ch8 */; };
+		D89A07AA1C7DE1C900D4E427 /* Hidden [David Winter, 1996].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A075F1C7DE06800D4E427 /* Hidden [David Winter, 1996].ch8 */; };
+		D89A07AB1C7DE1C900D4E427 /* Kaleidoscope [Joseph Weisbecker, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07601C7DE06800D4E427 /* Kaleidoscope [Joseph Weisbecker, 1978].ch8 */; };
+		D89A07AC1C7DE1C900D4E427 /* Landing.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07611C7DE06800D4E427 /* Landing.ch8 */; };
+		D89A07AD1C7DE1C900D4E427 /* Lunar Lander (Udo Pernisz, 1979).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07621C7DE06800D4E427 /* Lunar Lander (Udo Pernisz, 1979).ch8 */; };
+		D89A07AE1C7DE1C900D4E427 /* Mastermind FourRow (Robert Lindley, 1978).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07631C7DE06800D4E427 /* Mastermind FourRow (Robert Lindley, 1978).ch8 */; };
+		D89A07AF1C7DE1C900D4E427 /* Merlin [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07641C7DE06800D4E427 /* Merlin [David Winter].ch8 */; };
+		D89A07B01C7DE1C900D4E427 /* Missile [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07651C7DE06800D4E427 /* Missile [David Winter].ch8 */; };
+		D89A07B11C7DE1C900D4E427 /* Most Dangerous Game [Peter Maruhnic].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07661C7DE06800D4E427 /* Most Dangerous Game [Peter Maruhnic].ch8 */; };
+		D89A07B21C7DE1C900D4E427 /* Nim [Carmelo Cortez, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07671C7DE06800D4E427 /* Nim [Carmelo Cortez, 1978].ch8 */; };
+		D89A07B31C7DE1C900D4E427 /* Paddles.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07681C7DE06800D4E427 /* Paddles.ch8 */; };
+		D89A07B41C7DE1C900D4E427 /* Pong (1 player).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07691C7DE06800D4E427 /* Pong (1 player).ch8 */; };
+		D89A07B51C7DE1C900D4E427 /* Pong (alt).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A076A1C7DE06800D4E427 /* Pong (alt).ch8 */; };
+		D89A07B61C7DE1C900D4E427 /* Pong [Paul Vervalin, 1990].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A076B1C7DE06800D4E427 /* Pong [Paul Vervalin, 1990].ch8 */; };
+		D89A07B71C7DE1C900D4E427 /* Pong 2 (Pong hack) [David Winter, 1997].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A076C1C7DE06800D4E427 /* Pong 2 (Pong hack) [David Winter, 1997].ch8 */; };
+		D89A07B81C7DE1C900D4E427 /* Programmable Spacefighters [Jef Winsor].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A076D1C7DE06800D4E427 /* Programmable Spacefighters [Jef Winsor].ch8 */; };
+		D89A07B91C7DE1C900D4E427 /* Puzzle.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A076E1C7DE06800D4E427 /* Puzzle.ch8 */; };
+		D89A07BA1C7DE1C900D4E427 /* Reversi [Philip Baltzer].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A076F1C7DE06800D4E427 /* Reversi [Philip Baltzer].ch8 */; };
+		D89A07BB1C7DE1C900D4E427 /* Rocket [Joseph Weisbecker, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07701C7DE06800D4E427 /* Rocket [Joseph Weisbecker, 1978].ch8 */; };
+		D89A07BC1C7DE1C900D4E427 /* Rocket Launch [Jonas Lindstedt].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07711C7DE06800D4E427 /* Rocket Launch [Jonas Lindstedt].ch8 */; };
+		D89A07BD1C7DE1CA00D4E427 /* Rocket Launcher.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07721C7DE06800D4E427 /* Rocket Launcher.ch8 */; };
+		D89A07BE1C7DE1CA00D4E427 /* Rush Hour [Hap, 2006] (alt).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07731C7DE06800D4E427 /* Rush Hour [Hap, 2006] (alt).ch8 */; };
+		D89A07BF1C7DE1CA00D4E427 /* Rush Hour [Hap, 2006].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07741C7DE06800D4E427 /* Rush Hour [Hap, 2006].ch8 */; };
+		D89A07C01C7DE1CA00D4E427 /* Russian Roulette [Carmelo Cortez, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07751C7DE06800D4E427 /* Russian Roulette [Carmelo Cortez, 1978].ch8 */; };
+		D89A07C11C7DE1CA00D4E427 /* Sequence Shoot [Joyce Weisbecker].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07761C7DE06800D4E427 /* Sequence Shoot [Joyce Weisbecker].ch8 */; };
+		D89A07C21C7DE1CA00D4E427 /* Shooting Stars [Philip Baltzer, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07771C7DE06800D4E427 /* Shooting Stars [Philip Baltzer, 1978].ch8 */; };
+		D89A07C31C7DE1CA00D4E427 /* Slide [Joyce Weisbecker].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07781C7DE06800D4E427 /* Slide [Joyce Weisbecker].ch8 */; };
+		D89A07C41C7DE1CA00D4E427 /* Soccer.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07791C7DE06800D4E427 /* Soccer.ch8 */; };
+		D89A07C51C7DE1CA00D4E427 /* Space Flight.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A077A1C7DE06800D4E427 /* Space Flight.ch8 */; };
+		D89A07C61C7DE1CA00D4E427 /* Space Intercept [Joseph Weisbecker, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A077B1C7DE06800D4E427 /* Space Intercept [Joseph Weisbecker, 1978].ch8 */; };
+		D89A07C71C7DE1CA00D4E427 /* Space Invaders [David Winter] (alt).ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A077C1C7DE06800D4E427 /* Space Invaders [David Winter] (alt).ch8 */; };
+		D89A07C81C7DE1CA00D4E427 /* Space Invaders [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A077D1C7DE06800D4E427 /* Space Invaders [David Winter].ch8 */; };
+		D89A07C91C7DE1CA00D4E427 /* Spooky Spot [Joseph Weisbecker, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A077E1C7DE06800D4E427 /* Spooky Spot [Joseph Weisbecker, 1978].ch8 */; };
+		D89A07CA1C7DE1CA00D4E427 /* Squash [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A077F1C7DE06800D4E427 /* Squash [David Winter].ch8 */; };
+		D89A07CB1C7DE1CA00D4E427 /* Submarine [Carmelo Cortez, 1978].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07801C7DE06800D4E427 /* Submarine [Carmelo Cortez, 1978].ch8 */; };
+		D89A07CC1C7DE1CA00D4E427 /* Sum Fun [Joyce Weisbecker].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07811C7DE06800D4E427 /* Sum Fun [Joyce Weisbecker].ch8 */; };
+		D89A07CD1C7DE1CA00D4E427 /* Syzygy [Roy Trevino, 1990].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07821C7DE06800D4E427 /* Syzygy [Roy Trevino, 1990].ch8 */; };
+		D89A07CE1C7DE1CA00D4E427 /* Tank.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07831C7DE06800D4E427 /* Tank.ch8 */; };
+		D89A07CF1C7DE1CA00D4E427 /* Tapeworm [JDR, 1999].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07841C7DE06800D4E427 /* Tapeworm [JDR, 1999].ch8 */; };
+		D89A07D01C7DE1CA00D4E427 /* Tetris [Fran Dachille, 1991].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07851C7DE06800D4E427 /* Tetris [Fran Dachille, 1991].ch8 */; };
+		D89A07D11C7DE1CA00D4E427 /* Tic-Tac-Toe [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07861C7DE06800D4E427 /* Tic-Tac-Toe [David Winter].ch8 */; };
+		D89A07D21C7DE1CA00D4E427 /* Timebomb.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07871C7DE06800D4E427 /* Timebomb.ch8 */; };
+		D89A07D31C7DE1CA00D4E427 /* Tron.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07881C7DE06800D4E427 /* Tron.ch8 */; };
+		D89A07D41C7DE1CA00D4E427 /* UFO [Lutz V, 1992].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07891C7DE06800D4E427 /* UFO [Lutz V, 1992].ch8 */; };
+		D89A07D51C7DE1CA00D4E427 /* Vers [JMN, 1991].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A078A1C7DE06800D4E427 /* Vers [JMN, 1991].ch8 */; };
+		D89A07D61C7DE1CA00D4E427 /* Vertical Brix [Paul Robson, 1996].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A078B1C7DE06800D4E427 /* Vertical Brix [Paul Robson, 1996].ch8 */; };
+		D89A07D71C7DE1CA00D4E427 /* Wall [David Winter].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A078C1C7DE06800D4E427 /* Wall [David Winter].ch8 */; };
+		D89A07D81C7DE1CA00D4E427 /* Wipe Off [Joseph Weisbecker].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A078D1C7DE06800D4E427 /* Wipe Off [Joseph Weisbecker].ch8 */; };
+		D89A07D91C7DE1CA00D4E427 /* Worm V4 [RB-Revival Studios, 2007].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A078E1C7DE06800D4E427 /* Worm V4 [RB-Revival Studios, 2007].ch8 */; };
+		D89A07DA1C7DE1CA00D4E427 /* X-Mirror.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A078F1C7DE06800D4E427 /* X-Mirror.ch8 */; };
+		D89A07DB1C7DE1CA00D4E427 /* ZeroPong [zeroZshadow, 2007].ch8 in Resources */ = {isa = PBXBuildFile; fileRef = D89A07901C7DE06800D4E427 /* ZeroPong [zeroZshadow, 2007].ch8 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D88E524A1C7B9B510008C5F3 /* Chip8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chip8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88E524D1C7B9B510008C5F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D88E524F1C7B9B510008C5F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D88E52521C7B9B510008C5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D88E52541C7B9B510008C5F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D88E52571C7B9B510008C5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D88E52591C7B9B510008C5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88E525F1C7B9B6C0008C5F3 /* Chip8Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chip8Core.swift; sourceTree = SOURCE_ROOT; };
+		D89A07201C7D153100D4E427 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D89A07221C7D18E500D4E427 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		D89A073B1C7DA17E00D4E427 /* BitBlitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitBlitter.swift; sourceTree = "<group>"; };
+		D89A073E1C7DA31C00D4E427 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		D89A07401C7DCC0500D4E427 /* chip8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chip8.jpeg; sourceTree = "<group>"; };
+		D89A07421C7DD70400D4E427 /* RomListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomListViewController.swift; sourceTree = "<group>"; };
+		D89A07461C7DE06800D4E427 /* 15 Puzzle [Roger Ivie] (alt).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "15 Puzzle [Roger Ivie] (alt).ch8"; sourceTree = "<group>"; };
+		D89A07471C7DE06800D4E427 /* 15 Puzzle [Roger Ivie].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "15 Puzzle [Roger Ivie].ch8"; sourceTree = "<group>"; };
+		D89A07481C7DE06800D4E427 /* Addition Problems [Paul C. Moews].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Addition Problems [Paul C. Moews].ch8"; sourceTree = "<group>"; };
+		D89A07491C7DE06800D4E427 /* Airplane.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Airplane.ch8; sourceTree = "<group>"; };
+		D89A074A1C7DE06800D4E427 /* Animal Race [Brian Astle].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Animal Race [Brian Astle].ch8"; sourceTree = "<group>"; };
+		D89A074B1C7DE06800D4E427 /* Astro Dodge [Revival Studios, 2008].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Astro Dodge [Revival Studios, 2008].ch8"; sourceTree = "<group>"; };
+		D89A074C1C7DE06800D4E427 /* Biorhythm [Jef Winsor].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Biorhythm [Jef Winsor].ch8"; sourceTree = "<group>"; };
+		D89A074D1C7DE06800D4E427 /* Blinky [Hans Christian Egeberg, 1991].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blinky [Hans Christian Egeberg, 1991].ch8"; sourceTree = "<group>"; };
+		D89A074E1C7DE06800D4E427 /* Blinky [Hans Christian Egeberg] (alt).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blinky [Hans Christian Egeberg] (alt).ch8"; sourceTree = "<group>"; };
+		D89A074F1C7DE06800D4E427 /* Blitz [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blitz [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A07501C7DE06800D4E427 /* Bowling [Gooitzen van der Wal].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bowling [Gooitzen van der Wal].ch8"; sourceTree = "<group>"; };
+		D89A07511C7DE06800D4E427 /* Breakout (Brix hack) [David Winter, 1997].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Breakout (Brix hack) [David Winter, 1997].ch8"; sourceTree = "<group>"; };
+		D89A07521C7DE06800D4E427 /* Breakout [Carmelo Cortez, 1979].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Breakout [Carmelo Cortez, 1979].ch8"; sourceTree = "<group>"; };
+		D89A07531C7DE06800D4E427 /* Brick (Brix hack, 1990).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brick (Brix hack, 1990).ch8"; sourceTree = "<group>"; };
+		D89A07541C7DE06800D4E427 /* Brix [Andreas Gustafsson, 1990].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brix [Andreas Gustafsson, 1990].ch8"; sourceTree = "<group>"; };
+		D89A07551C7DE06800D4E427 /* Cave.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cave.ch8; sourceTree = "<group>"; };
+		D89A07561C7DE06800D4E427 /* Coin Flipping [Carmelo Cortez, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coin Flipping [Carmelo Cortez, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07571C7DE06800D4E427 /* Connect 4 [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Connect 4 [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A07581C7DE06800D4E427 /* Craps [Camerlo Cortez, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Craps [Camerlo Cortez, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07591C7DE06800D4E427 /* Deflection [John Fort].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Deflection [John Fort].ch8"; sourceTree = "<group>"; };
+		D89A075A1C7DE06800D4E427 /* Figures.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Figures.ch8; sourceTree = "<group>"; };
+		D89A075B1C7DE06800D4E427 /* Filter.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Filter.ch8; sourceTree = "<group>"; };
+		D89A075C1C7DE06800D4E427 /* Guess [David Winter] (alt).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Guess [David Winter] (alt).ch8"; sourceTree = "<group>"; };
+		D89A075D1C7DE06800D4E427 /* Guess [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Guess [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A075E1C7DE06800D4E427 /* Hi-Lo [Jef Winsor, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hi-Lo [Jef Winsor, 1978].ch8"; sourceTree = "<group>"; };
+		D89A075F1C7DE06800D4E427 /* Hidden [David Winter, 1996].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hidden [David Winter, 1996].ch8"; sourceTree = "<group>"; };
+		D89A07601C7DE06800D4E427 /* Kaleidoscope [Joseph Weisbecker, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kaleidoscope [Joseph Weisbecker, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07611C7DE06800D4E427 /* Landing.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Landing.ch8; sourceTree = "<group>"; };
+		D89A07621C7DE06800D4E427 /* Lunar Lander (Udo Pernisz, 1979).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lunar Lander (Udo Pernisz, 1979).ch8"; sourceTree = "<group>"; };
+		D89A07631C7DE06800D4E427 /* Mastermind FourRow (Robert Lindley, 1978).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mastermind FourRow (Robert Lindley, 1978).ch8"; sourceTree = "<group>"; };
+		D89A07641C7DE06800D4E427 /* Merlin [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merlin [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A07651C7DE06800D4E427 /* Missile [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Missile [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A07661C7DE06800D4E427 /* Most Dangerous Game [Peter Maruhnic].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Most Dangerous Game [Peter Maruhnic].ch8"; sourceTree = "<group>"; };
+		D89A07671C7DE06800D4E427 /* Nim [Carmelo Cortez, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nim [Carmelo Cortez, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07681C7DE06800D4E427 /* Paddles.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Paddles.ch8; sourceTree = "<group>"; };
+		D89A07691C7DE06800D4E427 /* Pong (1 player).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pong (1 player).ch8"; sourceTree = "<group>"; };
+		D89A076A1C7DE06800D4E427 /* Pong (alt).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pong (alt).ch8"; sourceTree = "<group>"; };
+		D89A076B1C7DE06800D4E427 /* Pong [Paul Vervalin, 1990].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pong [Paul Vervalin, 1990].ch8"; sourceTree = "<group>"; };
+		D89A076C1C7DE06800D4E427 /* Pong 2 (Pong hack) [David Winter, 1997].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pong 2 (Pong hack) [David Winter, 1997].ch8"; sourceTree = "<group>"; };
+		D89A076D1C7DE06800D4E427 /* Programmable Spacefighters [Jef Winsor].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Programmable Spacefighters [Jef Winsor].ch8"; sourceTree = "<group>"; };
+		D89A076E1C7DE06800D4E427 /* Puzzle.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Puzzle.ch8; sourceTree = "<group>"; };
+		D89A076F1C7DE06800D4E427 /* Reversi [Philip Baltzer].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reversi [Philip Baltzer].ch8"; sourceTree = "<group>"; };
+		D89A07701C7DE06800D4E427 /* Rocket [Joseph Weisbecker, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rocket [Joseph Weisbecker, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07711C7DE06800D4E427 /* Rocket Launch [Jonas Lindstedt].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rocket Launch [Jonas Lindstedt].ch8"; sourceTree = "<group>"; };
+		D89A07721C7DE06800D4E427 /* Rocket Launcher.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rocket Launcher.ch8"; sourceTree = "<group>"; };
+		D89A07731C7DE06800D4E427 /* Rush Hour [Hap, 2006] (alt).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rush Hour [Hap, 2006] (alt).ch8"; sourceTree = "<group>"; };
+		D89A07741C7DE06800D4E427 /* Rush Hour [Hap, 2006].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rush Hour [Hap, 2006].ch8"; sourceTree = "<group>"; };
+		D89A07751C7DE06800D4E427 /* Russian Roulette [Carmelo Cortez, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Russian Roulette [Carmelo Cortez, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07761C7DE06800D4E427 /* Sequence Shoot [Joyce Weisbecker].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sequence Shoot [Joyce Weisbecker].ch8"; sourceTree = "<group>"; };
+		D89A07771C7DE06800D4E427 /* Shooting Stars [Philip Baltzer, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shooting Stars [Philip Baltzer, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07781C7DE06800D4E427 /* Slide [Joyce Weisbecker].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slide [Joyce Weisbecker].ch8"; sourceTree = "<group>"; };
+		D89A07791C7DE06800D4E427 /* Soccer.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Soccer.ch8; sourceTree = "<group>"; };
+		D89A077A1C7DE06800D4E427 /* Space Flight.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Space Flight.ch8"; sourceTree = "<group>"; };
+		D89A077B1C7DE06800D4E427 /* Space Intercept [Joseph Weisbecker, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Space Intercept [Joseph Weisbecker, 1978].ch8"; sourceTree = "<group>"; };
+		D89A077C1C7DE06800D4E427 /* Space Invaders [David Winter] (alt).ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Space Invaders [David Winter] (alt).ch8"; sourceTree = "<group>"; };
+		D89A077D1C7DE06800D4E427 /* Space Invaders [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Space Invaders [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A077E1C7DE06800D4E427 /* Spooky Spot [Joseph Weisbecker, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spooky Spot [Joseph Weisbecker, 1978].ch8"; sourceTree = "<group>"; };
+		D89A077F1C7DE06800D4E427 /* Squash [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Squash [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A07801C7DE06800D4E427 /* Submarine [Carmelo Cortez, 1978].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Submarine [Carmelo Cortez, 1978].ch8"; sourceTree = "<group>"; };
+		D89A07811C7DE06800D4E427 /* Sum Fun [Joyce Weisbecker].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sum Fun [Joyce Weisbecker].ch8"; sourceTree = "<group>"; };
+		D89A07821C7DE06800D4E427 /* Syzygy [Roy Trevino, 1990].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syzygy [Roy Trevino, 1990].ch8"; sourceTree = "<group>"; };
+		D89A07831C7DE06800D4E427 /* Tank.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tank.ch8; sourceTree = "<group>"; };
+		D89A07841C7DE06800D4E427 /* Tapeworm [JDR, 1999].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tapeworm [JDR, 1999].ch8"; sourceTree = "<group>"; };
+		D89A07851C7DE06800D4E427 /* Tetris [Fran Dachille, 1991].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tetris [Fran Dachille, 1991].ch8"; sourceTree = "<group>"; };
+		D89A07861C7DE06800D4E427 /* Tic-Tac-Toe [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tic-Tac-Toe [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A07871C7DE06800D4E427 /* Timebomb.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timebomb.ch8; sourceTree = "<group>"; };
+		D89A07881C7DE06800D4E427 /* Tron.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tron.ch8; sourceTree = "<group>"; };
+		D89A07891C7DE06800D4E427 /* UFO [Lutz V, 1992].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UFO [Lutz V, 1992].ch8"; sourceTree = "<group>"; };
+		D89A078A1C7DE06800D4E427 /* Vers [JMN, 1991].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vers [JMN, 1991].ch8"; sourceTree = "<group>"; };
+		D89A078B1C7DE06800D4E427 /* Vertical Brix [Paul Robson, 1996].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vertical Brix [Paul Robson, 1996].ch8"; sourceTree = "<group>"; };
+		D89A078C1C7DE06800D4E427 /* Wall [David Winter].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wall [David Winter].ch8"; sourceTree = "<group>"; };
+		D89A078D1C7DE06800D4E427 /* Wipe Off [Joseph Weisbecker].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wipe Off [Joseph Weisbecker].ch8"; sourceTree = "<group>"; };
+		D89A078E1C7DE06800D4E427 /* Worm V4 [RB-Revival Studios, 2007].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Worm V4 [RB-Revival Studios, 2007].ch8"; sourceTree = "<group>"; };
+		D89A078F1C7DE06800D4E427 /* X-Mirror.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "X-Mirror.ch8"; sourceTree = "<group>"; };
+		D89A07901C7DE06800D4E427 /* ZeroPong [zeroZshadow, 2007].ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZeroPong [zeroZshadow, 2007].ch8"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D88E52471C7B9B510008C5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89A07211C7D153100D4E427 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D88E52411C7B9B510008C5F3 = {
+			isa = PBXGroup;
+			children = (
+				D89A07421C7DD70400D4E427 /* RomListViewController.swift */,
+				D89A07221C7D18E500D4E427 /* beep.wav */,
+				D89A07401C7DCC0500D4E427 /* chip8.jpeg */,
+				D89A07201C7D153100D4E427 /* AVFoundation.framework */,
+				D88E524C1C7B9B510008C5F3 /* Chip8 */,
+				D88E524B1C7B9B510008C5F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D88E524B1C7B9B510008C5F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D88E524A1C7B9B510008C5F3 /* Chip8.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D88E524C1C7B9B510008C5F3 /* Chip8 */ = {
+			isa = PBXGroup;
+			children = (
+				D89A073D1C7DA30A00D4E427 /* Audio Player */,
+				D89A073A1C7DA16900D4E427 /* BitBlitter */,
+				D89A07391C7DA14600D4E427 /* Chip8 Programs */,
+				D89A07381C7DA13B00D4E427 /* Chip8Core */,
+				D88E524D1C7B9B510008C5F3 /* AppDelegate.swift */,
+				D88E524F1C7B9B510008C5F3 /* ViewController.swift */,
+				D88E52511C7B9B510008C5F3 /* Main.storyboard */,
+				D88E52541C7B9B510008C5F3 /* Assets.xcassets */,
+				D88E52561C7B9B510008C5F3 /* LaunchScreen.storyboard */,
+				D88E52591C7B9B510008C5F3 /* Info.plist */,
+			);
+			path = Chip8;
+			sourceTree = "<group>";
+		};
+		D89A07381C7DA13B00D4E427 /* Chip8Core */ = {
+			isa = PBXGroup;
+			children = (
+				D88E525F1C7B9B6C0008C5F3 /* Chip8Core.swift */,
+			);
+			name = Chip8Core;
+			sourceTree = "<group>";
+		};
+		D89A07391C7DA14600D4E427 /* Chip8 Programs */ = {
+			isa = PBXGroup;
+			children = (
+				D89A07461C7DE06800D4E427 /* 15 Puzzle [Roger Ivie] (alt).ch8 */,
+				D89A07471C7DE06800D4E427 /* 15 Puzzle [Roger Ivie].ch8 */,
+				D89A07481C7DE06800D4E427 /* Addition Problems [Paul C. Moews].ch8 */,
+				D89A07491C7DE06800D4E427 /* Airplane.ch8 */,
+				D89A074A1C7DE06800D4E427 /* Animal Race [Brian Astle].ch8 */,
+				D89A074B1C7DE06800D4E427 /* Astro Dodge [Revival Studios, 2008].ch8 */,
+				D89A074C1C7DE06800D4E427 /* Biorhythm [Jef Winsor].ch8 */,
+				D89A074D1C7DE06800D4E427 /* Blinky [Hans Christian Egeberg, 1991].ch8 */,
+				D89A074E1C7DE06800D4E427 /* Blinky [Hans Christian Egeberg] (alt).ch8 */,
+				D89A074F1C7DE06800D4E427 /* Blitz [David Winter].ch8 */,
+				D89A07501C7DE06800D4E427 /* Bowling [Gooitzen van der Wal].ch8 */,
+				D89A07511C7DE06800D4E427 /* Breakout (Brix hack) [David Winter, 1997].ch8 */,
+				D89A07521C7DE06800D4E427 /* Breakout [Carmelo Cortez, 1979].ch8 */,
+				D89A07531C7DE06800D4E427 /* Brick (Brix hack, 1990).ch8 */,
+				D89A07541C7DE06800D4E427 /* Brix [Andreas Gustafsson, 1990].ch8 */,
+				D89A07551C7DE06800D4E427 /* Cave.ch8 */,
+				D89A07561C7DE06800D4E427 /* Coin Flipping [Carmelo Cortez, 1978].ch8 */,
+				D89A07571C7DE06800D4E427 /* Connect 4 [David Winter].ch8 */,
+				D89A07581C7DE06800D4E427 /* Craps [Camerlo Cortez, 1978].ch8 */,
+				D89A07591C7DE06800D4E427 /* Deflection [John Fort].ch8 */,
+				D89A075A1C7DE06800D4E427 /* Figures.ch8 */,
+				D89A075B1C7DE06800D4E427 /* Filter.ch8 */,
+				D89A075C1C7DE06800D4E427 /* Guess [David Winter] (alt).ch8 */,
+				D89A075D1C7DE06800D4E427 /* Guess [David Winter].ch8 */,
+				D89A075E1C7DE06800D4E427 /* Hi-Lo [Jef Winsor, 1978].ch8 */,
+				D89A075F1C7DE06800D4E427 /* Hidden [David Winter, 1996].ch8 */,
+				D89A07601C7DE06800D4E427 /* Kaleidoscope [Joseph Weisbecker, 1978].ch8 */,
+				D89A07611C7DE06800D4E427 /* Landing.ch8 */,
+				D89A07621C7DE06800D4E427 /* Lunar Lander (Udo Pernisz, 1979).ch8 */,
+				D89A07631C7DE06800D4E427 /* Mastermind FourRow (Robert Lindley, 1978).ch8 */,
+				D89A07641C7DE06800D4E427 /* Merlin [David Winter].ch8 */,
+				D89A07651C7DE06800D4E427 /* Missile [David Winter].ch8 */,
+				D89A07661C7DE06800D4E427 /* Most Dangerous Game [Peter Maruhnic].ch8 */,
+				D89A07671C7DE06800D4E427 /* Nim [Carmelo Cortez, 1978].ch8 */,
+				D89A07681C7DE06800D4E427 /* Paddles.ch8 */,
+				D89A07691C7DE06800D4E427 /* Pong (1 player).ch8 */,
+				D89A076A1C7DE06800D4E427 /* Pong (alt).ch8 */,
+				D89A076B1C7DE06800D4E427 /* Pong [Paul Vervalin, 1990].ch8 */,
+				D89A076C1C7DE06800D4E427 /* Pong 2 (Pong hack) [David Winter, 1997].ch8 */,
+				D89A076D1C7DE06800D4E427 /* Programmable Spacefighters [Jef Winsor].ch8 */,
+				D89A076E1C7DE06800D4E427 /* Puzzle.ch8 */,
+				D89A076F1C7DE06800D4E427 /* Reversi [Philip Baltzer].ch8 */,
+				D89A07701C7DE06800D4E427 /* Rocket [Joseph Weisbecker, 1978].ch8 */,
+				D89A07711C7DE06800D4E427 /* Rocket Launch [Jonas Lindstedt].ch8 */,
+				D89A07721C7DE06800D4E427 /* Rocket Launcher.ch8 */,
+				D89A07731C7DE06800D4E427 /* Rush Hour [Hap, 2006] (alt).ch8 */,
+				D89A07741C7DE06800D4E427 /* Rush Hour [Hap, 2006].ch8 */,
+				D89A07751C7DE06800D4E427 /* Russian Roulette [Carmelo Cortez, 1978].ch8 */,
+				D89A07761C7DE06800D4E427 /* Sequence Shoot [Joyce Weisbecker].ch8 */,
+				D89A07771C7DE06800D4E427 /* Shooting Stars [Philip Baltzer, 1978].ch8 */,
+				D89A07781C7DE06800D4E427 /* Slide [Joyce Weisbecker].ch8 */,
+				D89A07791C7DE06800D4E427 /* Soccer.ch8 */,
+				D89A077A1C7DE06800D4E427 /* Space Flight.ch8 */,
+				D89A077B1C7DE06800D4E427 /* Space Intercept [Joseph Weisbecker, 1978].ch8 */,
+				D89A077C1C7DE06800D4E427 /* Space Invaders [David Winter] (alt).ch8 */,
+				D89A077D1C7DE06800D4E427 /* Space Invaders [David Winter].ch8 */,
+				D89A077E1C7DE06800D4E427 /* Spooky Spot [Joseph Weisbecker, 1978].ch8 */,
+				D89A077F1C7DE06800D4E427 /* Squash [David Winter].ch8 */,
+				D89A07801C7DE06800D4E427 /* Submarine [Carmelo Cortez, 1978].ch8 */,
+				D89A07811C7DE06800D4E427 /* Sum Fun [Joyce Weisbecker].ch8 */,
+				D89A07821C7DE06800D4E427 /* Syzygy [Roy Trevino, 1990].ch8 */,
+				D89A07831C7DE06800D4E427 /* Tank.ch8 */,
+				D89A07841C7DE06800D4E427 /* Tapeworm [JDR, 1999].ch8 */,
+				D89A07851C7DE06800D4E427 /* Tetris [Fran Dachille, 1991].ch8 */,
+				D89A07861C7DE06800D4E427 /* Tic-Tac-Toe [David Winter].ch8 */,
+				D89A07871C7DE06800D4E427 /* Timebomb.ch8 */,
+				D89A07881C7DE06800D4E427 /* Tron.ch8 */,
+				D89A07891C7DE06800D4E427 /* UFO [Lutz V, 1992].ch8 */,
+				D89A078A1C7DE06800D4E427 /* Vers [JMN, 1991].ch8 */,
+				D89A078B1C7DE06800D4E427 /* Vertical Brix [Paul Robson, 1996].ch8 */,
+				D89A078C1C7DE06800D4E427 /* Wall [David Winter].ch8 */,
+				D89A078D1C7DE06800D4E427 /* Wipe Off [Joseph Weisbecker].ch8 */,
+				D89A078E1C7DE06800D4E427 /* Worm V4 [RB-Revival Studios, 2007].ch8 */,
+				D89A078F1C7DE06800D4E427 /* X-Mirror.ch8 */,
+				D89A07901C7DE06800D4E427 /* ZeroPong [zeroZshadow, 2007].ch8 */,
+			);
+			name = "Chip8 Programs";
+			sourceTree = "<group>";
+		};
+		D89A073A1C7DA16900D4E427 /* BitBlitter */ = {
+			isa = PBXGroup;
+			children = (
+				D89A073B1C7DA17E00D4E427 /* BitBlitter.swift */,
+			);
+			name = BitBlitter;
+			sourceTree = "<group>";
+		};
+		D89A073D1C7DA30A00D4E427 /* Audio Player */ = {
+			isa = PBXGroup;
+			children = (
+				D89A073E1C7DA31C00D4E427 /* AudioPlayer.swift */,
+			);
+			name = "Audio Player";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D88E52491C7B9B510008C5F3 /* Chip8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88E525C1C7B9B510008C5F3 /* Build configuration list for PBXNativeTarget "Chip8" */;
+			buildPhases = (
+				D88E52461C7B9B510008C5F3 /* Sources */,
+				D88E52471C7B9B510008C5F3 /* Frameworks */,
+				D88E52481C7B9B510008C5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chip8;
+			productName = Chip8;
+			productReference = D88E524A1C7B9B510008C5F3 /* Chip8.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D88E52421C7B9B510008C5F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ByteOrbit;
+				TargetAttributes = {
+					D88E52491C7B9B510008C5F3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = D88E52451C7B9B510008C5F3 /* Build configuration list for PBXProject "Chip8" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D88E52411C7B9B510008C5F3;
+			productRefGroup = D88E524B1C7B9B510008C5F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D88E52491C7B9B510008C5F3 /* Chip8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D88E52481C7B9B510008C5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89A07911C7DE1C900D4E427 /* 15 Puzzle [Roger Ivie] (alt).ch8 in Resources */,
+				D89A07921C7DE1C900D4E427 /* 15 Puzzle [Roger Ivie].ch8 in Resources */,
+				D89A07931C7DE1C900D4E427 /* Addition Problems [Paul C. Moews].ch8 in Resources */,
+				D89A07941C7DE1C900D4E427 /* Airplane.ch8 in Resources */,
+				D89A07951C7DE1C900D4E427 /* Animal Race [Brian Astle].ch8 in Resources */,
+				D89A07961C7DE1C900D4E427 /* Astro Dodge [Revival Studios, 2008].ch8 in Resources */,
+				D89A07971C7DE1C900D4E427 /* Biorhythm [Jef Winsor].ch8 in Resources */,
+				D89A07981C7DE1C900D4E427 /* Blinky [Hans Christian Egeberg, 1991].ch8 in Resources */,
+				D89A07991C7DE1C900D4E427 /* Blinky [Hans Christian Egeberg] (alt).ch8 in Resources */,
+				D89A079A1C7DE1C900D4E427 /* Blitz [David Winter].ch8 in Resources */,
+				D89A079B1C7DE1C900D4E427 /* Bowling [Gooitzen van der Wal].ch8 in Resources */,
+				D89A079C1C7DE1C900D4E427 /* Breakout (Brix hack) [David Winter, 1997].ch8 in Resources */,
+				D89A079D1C7DE1C900D4E427 /* Breakout [Carmelo Cortez, 1979].ch8 in Resources */,
+				D89A079E1C7DE1C900D4E427 /* Brick (Brix hack, 1990).ch8 in Resources */,
+				D89A079F1C7DE1C900D4E427 /* Brix [Andreas Gustafsson, 1990].ch8 in Resources */,
+				D89A07A01C7DE1C900D4E427 /* Cave.ch8 in Resources */,
+				D89A07A11C7DE1C900D4E427 /* Coin Flipping [Carmelo Cortez, 1978].ch8 in Resources */,
+				D89A07A21C7DE1C900D4E427 /* Connect 4 [David Winter].ch8 in Resources */,
+				D89A07A31C7DE1C900D4E427 /* Craps [Camerlo Cortez, 1978].ch8 in Resources */,
+				D89A07A41C7DE1C900D4E427 /* Deflection [John Fort].ch8 in Resources */,
+				D89A07A51C7DE1C900D4E427 /* Figures.ch8 in Resources */,
+				D89A07A61C7DE1C900D4E427 /* Filter.ch8 in Resources */,
+				D89A07A71C7DE1C900D4E427 /* Guess [David Winter] (alt).ch8 in Resources */,
+				D89A07A81C7DE1C900D4E427 /* Guess [David Winter].ch8 in Resources */,
+				D89A07A91C7DE1C900D4E427 /* Hi-Lo [Jef Winsor, 1978].ch8 in Resources */,
+				D89A07AA1C7DE1C900D4E427 /* Hidden [David Winter, 1996].ch8 in Resources */,
+				D89A07AB1C7DE1C900D4E427 /* Kaleidoscope [Joseph Weisbecker, 1978].ch8 in Resources */,
+				D89A07AC1C7DE1C900D4E427 /* Landing.ch8 in Resources */,
+				D89A07AD1C7DE1C900D4E427 /* Lunar Lander (Udo Pernisz, 1979).ch8 in Resources */,
+				D89A07AE1C7DE1C900D4E427 /* Mastermind FourRow (Robert Lindley, 1978).ch8 in Resources */,
+				D89A07AF1C7DE1C900D4E427 /* Merlin [David Winter].ch8 in Resources */,
+				D89A07B01C7DE1C900D4E427 /* Missile [David Winter].ch8 in Resources */,
+				D89A07B11C7DE1C900D4E427 /* Most Dangerous Game [Peter Maruhnic].ch8 in Resources */,
+				D89A07B21C7DE1C900D4E427 /* Nim [Carmelo Cortez, 1978].ch8 in Resources */,
+				D89A07B31C7DE1C900D4E427 /* Paddles.ch8 in Resources */,
+				D89A07B41C7DE1C900D4E427 /* Pong (1 player).ch8 in Resources */,
+				D89A07B51C7DE1C900D4E427 /* Pong (alt).ch8 in Resources */,
+				D89A07B61C7DE1C900D4E427 /* Pong [Paul Vervalin, 1990].ch8 in Resources */,
+				D89A07B71C7DE1C900D4E427 /* Pong 2 (Pong hack) [David Winter, 1997].ch8 in Resources */,
+				D89A07B81C7DE1C900D4E427 /* Programmable Spacefighters [Jef Winsor].ch8 in Resources */,
+				D89A07B91C7DE1C900D4E427 /* Puzzle.ch8 in Resources */,
+				D89A07BA1C7DE1C900D4E427 /* Reversi [Philip Baltzer].ch8 in Resources */,
+				D89A07BB1C7DE1C900D4E427 /* Rocket [Joseph Weisbecker, 1978].ch8 in Resources */,
+				D89A07BC1C7DE1C900D4E427 /* Rocket Launch [Jonas Lindstedt].ch8 in Resources */,
+				D89A07BD1C7DE1CA00D4E427 /* Rocket Launcher.ch8 in Resources */,
+				D89A07BE1C7DE1CA00D4E427 /* Rush Hour [Hap, 2006] (alt).ch8 in Resources */,
+				D89A07BF1C7DE1CA00D4E427 /* Rush Hour [Hap, 2006].ch8 in Resources */,
+				D89A07C01C7DE1CA00D4E427 /* Russian Roulette [Carmelo Cortez, 1978].ch8 in Resources */,
+				D89A07C11C7DE1CA00D4E427 /* Sequence Shoot [Joyce Weisbecker].ch8 in Resources */,
+				D89A07C21C7DE1CA00D4E427 /* Shooting Stars [Philip Baltzer, 1978].ch8 in Resources */,
+				D89A07C31C7DE1CA00D4E427 /* Slide [Joyce Weisbecker].ch8 in Resources */,
+				D89A07C41C7DE1CA00D4E427 /* Soccer.ch8 in Resources */,
+				D89A07C51C7DE1CA00D4E427 /* Space Flight.ch8 in Resources */,
+				D89A07C61C7DE1CA00D4E427 /* Space Intercept [Joseph Weisbecker, 1978].ch8 in Resources */,
+				D89A07C71C7DE1CA00D4E427 /* Space Invaders [David Winter] (alt).ch8 in Resources */,
+				D89A07C81C7DE1CA00D4E427 /* Space Invaders [David Winter].ch8 in Resources */,
+				D89A07C91C7DE1CA00D4E427 /* Spooky Spot [Joseph Weisbecker, 1978].ch8 in Resources */,
+				D89A07CA1C7DE1CA00D4E427 /* Squash [David Winter].ch8 in Resources */,
+				D89A07CB1C7DE1CA00D4E427 /* Submarine [Carmelo Cortez, 1978].ch8 in Resources */,
+				D89A07CC1C7DE1CA00D4E427 /* Sum Fun [Joyce Weisbecker].ch8 in Resources */,
+				D89A07CD1C7DE1CA00D4E427 /* Syzygy [Roy Trevino, 1990].ch8 in Resources */,
+				D89A07CE1C7DE1CA00D4E427 /* Tank.ch8 in Resources */,
+				D89A07CF1C7DE1CA00D4E427 /* Tapeworm [JDR, 1999].ch8 in Resources */,
+				D89A07D01C7DE1CA00D4E427 /* Tetris [Fran Dachille, 1991].ch8 in Resources */,
+				D89A07D11C7DE1CA00D4E427 /* Tic-Tac-Toe [David Winter].ch8 in Resources */,
+				D89A07D21C7DE1CA00D4E427 /* Timebomb.ch8 in Resources */,
+				D89A07D31C7DE1CA00D4E427 /* Tron.ch8 in Resources */,
+				D89A07D41C7DE1CA00D4E427 /* UFO [Lutz V, 1992].ch8 in Resources */,
+				D89A07D51C7DE1CA00D4E427 /* Vers [JMN, 1991].ch8 in Resources */,
+				D89A07D61C7DE1CA00D4E427 /* Vertical Brix [Paul Robson, 1996].ch8 in Resources */,
+				D89A07D71C7DE1CA00D4E427 /* Wall [David Winter].ch8 in Resources */,
+				D89A07D81C7DE1CA00D4E427 /* Wipe Off [Joseph Weisbecker].ch8 in Resources */,
+				D89A07D91C7DE1CA00D4E427 /* Worm V4 [RB-Revival Studios, 2007].ch8 in Resources */,
+				D89A07DA1C7DE1CA00D4E427 /* X-Mirror.ch8 in Resources */,
+				D89A07DB1C7DE1CA00D4E427 /* ZeroPong [zeroZshadow, 2007].ch8 in Resources */,
+				D89A07411C7DCC0500D4E427 /* chip8.jpeg in Resources */,
+				D89A07231C7D18E500D4E427 /* beep.wav in Resources */,
+				D88E52581C7B9B510008C5F3 /* LaunchScreen.storyboard in Resources */,
+				D88E52551C7B9B510008C5F3 /* Assets.xcassets in Resources */,
+				D88E52531C7B9B510008C5F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D88E52461C7B9B510008C5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89A073C1C7DA17E00D4E427 /* BitBlitter.swift in Sources */,
+				D88E52601C7B9B6C0008C5F3 /* Chip8Core.swift in Sources */,
+				D89A073F1C7DA31C00D4E427 /* AudioPlayer.swift in Sources */,
+				D89A07431C7DD70400D4E427 /* RomListViewController.swift in Sources */,
+				D88E52501C7B9B510008C5F3 /* ViewController.swift in Sources */,
+				D88E524E1C7B9B510008C5F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D88E52511C7B9B510008C5F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88E52521C7B9B510008C5F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D88E52561C7B9B510008C5F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88E52571C7B9B510008C5F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D88E525A1C7B9B510008C5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D88E525B1C7B9B510008C5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D88E525D1C7B9B510008C5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chip8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteorbit.Chip8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D88E525E1C7B9B510008C5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chip8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteorbit.Chip8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D88E52451C7B9B510008C5F3 /* Build configuration list for PBXProject "Chip8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88E525A1C7B9B510008C5F3 /* Debug */,
+				D88E525B1C7B9B510008C5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88E525C1C7B9B510008C5F3 /* Build configuration list for PBXNativeTarget "Chip8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88E525D1C7B9B510008C5F3 /* Debug */,
+				D88E525E1C7B9B510008C5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D88E52421C7B9B510008C5F3 /* Project object */;
+}
