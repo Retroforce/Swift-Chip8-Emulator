@@ -22,8 +22,8 @@ class BitBlitter {
         var xx = 0
         var yy = 0
         var bufferIndex = 0
-        for var y = 0; y<32; y++ {
-            for var x = 0; x<64; x++ {
+        for y in 0..<32 {
+            for x in 0..<64 {
                 
                 let rectangle = CGRectMake(CGFloat(xx), CGFloat(yy), width, height)
                 
